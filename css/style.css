@@ -201,6 +201,19 @@
 	}
 }
 
+@media screen and (min-width: 375px){
+	.booking-form{
+		position: relative;
+	max-width: 642px;
+	width: 100%;
+	margin: auto;
+	padding: 17px;
+	overflow: hidden;
+	border-radius: 5px;
+	z-index: 20;
+	}
+}
+
 .image-fond{
 	background-image: url(/img/pizzares.jpg);
 	background-position: 43% 28%;
