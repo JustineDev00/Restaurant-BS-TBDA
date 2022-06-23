@@ -19,9 +19,9 @@
 
 </head>
 
-<body>
-  <div class="container-lg position-relative">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-lg-top">
+<body class="bg-light">
+  <div class="container-lg position-relative ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-lg-top border border-success">
 
       <div class="text-lg-start d-flex align-items-center">
         <img src="./img/logo-pizza-removebg-preview.png" class="img-fluid" width="100px">
@@ -47,18 +47,22 @@
             <a class="nav-link" href="#about">A propos</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-danger text-white strong" href="#booking">Réservation !</a>
+            <a class="btn btn-danger text-white strong me-3" href="#booking">Réservation !</a>
           </li>
         </ul>
       </div>
     </nav>
-    <hr class="border border-5 border-success">
+    
   </div>
+  <div class="container">
+<hr class="border border-5 border-success">
+</div>
+  
 
-  <div class="container-fluid container-lg">
+  <div class="container-fluid container-lg bg-light">
     <div class="row">
       <div class="p-2 col-lg-4">
-        <div class="card ">
+        <div class="card border border-success">
           <div class="card-body">
             <i class="fa-solid fa-utensils"></i>
             <h5 class="card-title">Nos cuisiniers</h5>
@@ -67,7 +71,7 @@
         </div>
       </div>
       <div class="p-2 col-lg-4">
-        <div class="card">
+        <div class="card border border-success">
           <div class="card-body">
             <i class="fa-solid fa-pizza-slice"></i>
             <h5 class="card-title">La qualité de nos produits</h5>
@@ -77,7 +81,7 @@
       </div>
       <div class="p-2 col-lg-4">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body border border-success">
             <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-bitcoin"></i>
             <h5 class="card-title">Paiement par internet</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
@@ -87,7 +91,7 @@
     </div>
     <hr>
   </div>
-  <div class="container-fluid container-lg">
+  <div class="container-fluid container-lg bg-white border border-success">
     <div class="row">
       <div class="col-lg-6 d-flex align-items-center">
         <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
@@ -133,13 +137,17 @@
         </div>
       </div>
     </div>
-    <hr>
+    
   </div>
+  <div class="container">
+    <hr>
+    </div>
+      
 
 
   <div id="booking" class="section">
     <div class="section-center">
-      <div class="container-fluid container-lg">
+      <div class="container-fluid container-lg bg-white border border-success">
         <div class="row">
           <div class="booking-form col-12 col-lg-6">
             <div class="form-header">
@@ -159,7 +167,7 @@
               <div class="row">
                 <div class="form-group">
                   <select class="form-control" required>
-                    <option value="" selected hidden>1</option>
+                    <option value="" selected hidden>0</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -188,7 +196,7 @@
                 </div>
               </div>
               <div class="form-btn">
-                <button class="submit-btn d-flex ms-auto">Réservez Maintenant !</button>
+                <button class="btn btn-danger d-flex ms-auto">Réservez !</button>
               </div>
             </form>
           </div>
@@ -200,19 +208,20 @@
 
           </div>
         </div>
-        <hr class="border border-5 border-danger">
+        
       </div>
     </div>
   </div>
   </div>
-
-
+  <div class="container">
+<hr class="border border-5 border-danger">
+</div>
 
 
 
 
   <footer class="">
-    <div class="container-fluid container-lg border border-primary">
+    <div class="container-fluid container-lg border border-success bg-white">
       <div class="row ">
         <div class="col d-flex justify-content-center">
           <i class="fa-brands fa-facebook  border rounded-circle p-1 m-10"></i>
@@ -252,8 +261,8 @@
         </div>
         <div class="row">
           <div class=" col-lg-12">
-            <h3 class="m-2 mt-5 d-flex justify-content-center">Newsletter</h3>
-            <div class="position-relative d-flex w-100">
+            <h3 class="m-2 mt-3 d-flex justify-content-center">Newsletter</h3>
+            <div class="position-relative d-flex justify-content-center w-100">
               <input type="Email" value="" placeholder="Email" class="form-control w-100 p-3">
               <button class="btn btn-danger position-absolute top-0 end-0 mt-2 me-2">S'inscrire </button>
             </div>
@@ -263,7 +272,7 @@
       </div>
       <div class="row d-flex ">
         <div class="col "></div>
-        <p class="d-flex justify-content-center p-5">&copy; 2022 Buona Pizza (AFPA) | Justine-Patrick-Ugo</p>
+        <p class="d-flex justify-content-center p-3">&copy; 2022 Buona Pizza (AFPA) | Justine-Patrick-Ugo</p>
       </div>
     </div>
   </footer>
