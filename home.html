@@ -20,34 +20,39 @@
 
 <body>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="card m-5 w-75">
-        <div class="card-body">
-          <i class="fa-solid fa-utensils"></i>
-         <h5 class="card-title">Nos cuisiniers</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+  <div class="container-fluid container-lg">
+    <div class="row g-5">
+      <div class="p-2 col-lg-4">
+        <div class="card ">
+          <div class="card-body">
+            <i class="fa-solid fa-utensils"></i>
+            <h5 class="card-title">Nos cuisiniers</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+          </div>
         </div>
       </div>
-      <div class="card m-5 w-75">
-        <div class="card-body">
-          <i class="fa-solid fa-pizza-slice"></i>
-          <h5 class="card-title">La qualité de nos produits</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+      <div class="p-2 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <i class="fa-solid fa-pizza-slice"></i>
+            <h5 class="card-title">La qualité de nos produits</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+          </div>
         </div>
       </div>
-      <div class="card m-5 w-75">
-        <div class="card-body">
-          <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-bitcoin"></i>
-          <h5 class="card-title">Paiement par internet</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+      <div class="p-2 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-bitcoin"></i>
+            <h5 class="card-title">Paiement par internet</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+          </div>
         </div>
       </div>
-
-      <hr class="m-5 w-75">
     </div>
+    <hr>
   </div>
-  <div class="container-fluid">
+  <div class="container-fluid container-lg">
     <div class="row">
       <div class="col-lg-6 d-flex align-items-center">
         <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
@@ -95,93 +100,133 @@
     </div>
   </div>
   <hr class="m-5 w-75">
-  <div class="container">
-    <div class="row">
-    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
-        <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-        <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item ">
-          <div class="card m-5 w-75">
-            <div class="card-body">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-          <img src="http://via.placeholder.com/50" alt="First slide" class="m-1 rounded-circle w-0">
-          <div class=" d-flex flex-column text-start ">
-            <h5 class=" d-flex border-bottom">Pizza</h5>
-          </div>
-          </div>
-        </div>
-        </div>
-        <div class="carousel-item ">
-          <div class="card m-5 w-75">
-          <div class="card-body">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-            <img src="http://via.placeholder.com/50" alt="Second slide" class="m-1 rounded-circle w-0">
-            <div class=" d-flex flex-column text-start ">
-              <h5 class=" d-flex border-bottom">Pizza</h5>
+
+  <div id="booking" class="section">
+    <div class="section-center">
+      <div class="container">
+        <div class="row">
+          <div class="booking-form col-12 col-lg-6">
+            <div class="form-header">
+              <h1>Réservez votre table en ligne !</h1>
+            </div>
+            <form>
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Ecrivez votre nom et prénom" required>
+                <span class="form-label d-none">Nom et Prénom</span>
               </div>
-            </div>
+              <div class="row">
+                <div class="form-group">
+                  <input class="form-control" type="date" required>
+                  <span class="form-label">Date pour la réservation</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <select class="form-control" required>
+                    <option value="" selected hidden>1</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                  <span class="select-arrow"></span>
+                  <span class="form-label">Nombres de personnes</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <input class="form-control" type="email" placeholder="Ecrivez votre email" required>
+                  <span class="form-label d-none">Email</span>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="tel" placeholder="Ecrivez votre numéro de téléphone" required>
+                  <span class="form-label d-none">Numéro de téléphone</span>
+                </div>
+              </div>
+              <div class="form-btn">
+                <button class="submit-btn d-flex ms-auto">Réservez Maintenant !</button>
+              </div>
+            </form>
           </div>
+          <div class="col-12 col-lg-6 image-form">
+            <div class="image-fond d-none d-lg-block">
+              <br><br><br>
             </div>
-        <div class="carousel-item">
-          <div class="card-body">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-            <img src="http://via.placeholder.com/50" alt="Third slide" class="m-1 rounded-circle w-0">
-            <div class=" d-flex flex-column text-start ">
-              <h5 class=" d-flex border-bottom">Pizza</h5>
-            </div>
-            </div>
+            <!-- <img src="img/pizzares.jpg" class="d-block d-lg-none image"> -->
+
+          </div>
+        </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-        </button>
     </div>
-    </div>
+  </div>
   </div>
 
 
-
-
-<hr class="border border-5 border-danger">
+  <hr class="border border-5 border-danger">
 
 
 
-<footer class="border border-primary">
-  <div class="row ">
-    <div class="col d-flex justify-content-center">
-    <i class="fa-brands fa-facebook  border rounded-circle p-1 m-10"></i>
-    <i class="fa-brands fa-instagram border rounded-circle p-1 m-10"></i>
-    <i class="fa-brands fa-tiktok border rounded-circle p-1 m-10"></i>
-    <i class="fa-brands fa-twitter border rounded-circle p-1 m-10"></i>
-    <i class="fa-brands fa-pinterest border rounded-circle p-1 m-10"></i>
-  </div>
-</div>
-<div class="row">
-    <div class="col">
-        <p class="">
-        <h3>A propos</h3>
-        </p>
-        <p>Mentions légales</p>
-        <p>CGU</p>
-        <a href="https://www.afpa.fr" target="blank" class= "white"><p>Join us</p></a>
+  <footer class="border border-primary">
+    <div class="container">
+      <div class="row ">
+        <div class="col d-flex justify-content-center">
+          <i class="fa-brands fa-facebook  border rounded-circle p-1 m-10"></i>
+          <i class="fa-brands fa-instagram border rounded-circle p-1 m-10"></i>
+          <i class="fa-brands fa-tiktok border rounded-circle p-1 m-10"></i>
+          <i class="fa-brands fa-twitter border rounded-circle p-1 m-10"></i>
+          <i class="fa-brands fa-pinterest border rounded-circle p-1 m-10"></i>
+        </div>
       </div>
-    <div class=" col">
-        <a href="https://github.com/JustineDev00/Restaurant-BS-TBDA"><img src="./img/logo-pizza.png" alt="" class="w-50"></a>
+      <div class="row ">
+        <div class="col-lg-3 d-flex flex-column align-items-center ">
+          <h3 class="m-2 mt-5">A propos</h3>
+          <p class="">Contact</p>
+          <p class="">Réservation</p>
+          <p class="">Mentions légales</p>
+          <p class="">CGU</p>
+        </div>
+        <div class="col-lg-3 d-flex flex-column align-items-center ">
+          <h3 class="m-2 mt-5">Contact</h3>
+          <p class="">123 rue du pain</p>
+          <p class="">01 77 88 99 11</p>
+          <p class="">contact@buonapizza.fr</p>
+        </div>
+
+        <div class="col-lg-3 d-flex flex-column align-items-center ">
+          <h3 class="m-2 mt-5">Ouverture</h3>
+          <h4 class="m-2">Mardi au Dimanche</h4>
+          <p class="">11h -14h 19h-22h </p>
+        </div>
+
+        <div class="col-lg-3 d-flex flex-column align-items-center ">
+          <h3 class="m-2 mt-5">Newsletter</h3>
+          <div class="position-relative d-flex w-100">
+            <input type="Email" value="" placeholder="Email" class="form-control w-100 p-3">
+            <button class="btn btn-danger position-absolute top-0 end-0 mt-2 me-2">S'inscrire </button>
+          </div>
+          <p class="m-2"></p>
+        </div>
+        <div class="row">
+          <div class=" col">
+            <a href="https://github.com/JustineDev00/Restaurant-BS-TBDA"><img
+                src="./img/logo-pizza-removebg-preview.png" alt="" class="w-0 d-none d-lg-block d-lg-flex"></a>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex ">
+        <div class="col "></div>
+        <p class="d-flex justify-content-center">&copy; 2022 Projet-TBDA (AFPA) | Justine-Patrick-Ugo</p>
+      </div>
     </div>
-</div>
-<div class="row d-flex ">
-  <div class="col d-flex justify-content-center"></div>
-    <p >&copy; 2022 Projet-TBDA (AFPA) | Justine-Patrick-Ugo</p>
-</div>
-</footer>
+  </footer>
 
 
 
