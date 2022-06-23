@@ -14,3 +14,8 @@
     height: 10vh;
     background: url(/img/pexels-alena-darmel-7223301.jpg) no-repeat 50% 62%;
 }
+
+.carousel-item .container{
+    width: 30vw;
+    height: 30vh;
+}
