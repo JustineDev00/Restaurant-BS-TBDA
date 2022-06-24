@@ -15,3 +15,20 @@
     background: url(/img/pexels-alena-darmel-7223301.jpg) no-repeat 50% 62%;
 }
 
+@media screen and (min-width: 768px){
+    .carousel-control-prev{
+        margin-left: -10rem;
+    }
+    .carousel-control-next{
+        margin-right: -10rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .carousel-control-prev{
+        display: none;
+    }
+    .carousel-control-next{
+        display: none;
+    }
+}
