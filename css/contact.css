@@ -1,4 +1,15 @@
 .margin{
      position: relative;
      left: 100px;
+
 }
+
+.header-style{
+     height: 40vh;
+     background: linear-gradient(rgba(205, 220, 207, 0.363), rgba(205, 220, 207, 0.363)), url(/Restaurant-BS-TBDA-master/img/pizza-header-2.jpg) no-repeat 65% 75%;
+     background-size: cover;
+     
+ }
+
+}
+
