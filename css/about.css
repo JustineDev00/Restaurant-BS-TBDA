@@ -15,7 +15,6 @@
     background: url(/Restaurant-BS-TBDA-master/img/pexels-alena-darmel-7223301.jpg) no-repeat 50% 62%;
 }
 
-
 @media screen and (min-width: 768px){
     .carousel-control-prev{
         margin-left: -10rem;
@@ -40,5 +39,3 @@
     background-size: cover;
     
 }
-
-
