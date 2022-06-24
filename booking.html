@@ -1,17 +1,116 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <title>Réservation</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS v5.2.0-beta1 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<head>
+  <title>Réservation</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  </head>
-  <body>
-      
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <div class="text-lg-start">
+        <img src="img/logo.png" class="img-fluid" width="150px">
+       </div>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="collapsibleNavId">
+        <ul class="navbar-nav text-light">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#booking">Réservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">A propos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="booking" class="section mt-md-5">
+    <div class="section-center">
+      <div class="container">
+          <div class="row">
+            <div class="booking-form col-12 col-lg-6">
+              <div class="form-header">
+                <h1>Réservez votre table en ligne !</h1>
+              </div>
+              <form>
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Ecrivez votre nom et prénom" required>
+                  <span class="form-label d-none">Nom et Prénom</span>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                      <input class="form-control" type="datetime-local" required>
+                      <span class="form-label">Date et heure pour la réservation</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                      <select class="form-control" required>
+                        <option value="" selected hidden>1</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                      <span class="form-label">Nombres de personnes</span>
+                    </div>
+                  </div>
+                <div class="row">
+                    <div class="form-group">
+                      <input class="form-control" type="email" placeholder="Ecrivez votre email" required>
+                      <span class="form-label d-none">Email</span>
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" type="tel" placeholder="Ecrivez votre numéro de téléphone" required>
+                      <span class="form-label d-none">Numéro de Téléphone</span>
+                    </div>
+                </div>
+                <div class="form-btn">
+                  <button class="submit-btn">Réservé Maintenant !</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-6 image-form">
+              <div class="image-fond d-none d-lg-block">
+                <br><br><br>
+              </div>
+              <!-- <img src="img/pizzares.jpg" class="d-block d-xl-none image"> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -29,10 +128,16 @@
 
 
 
-    
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-  </body>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
