@@ -15,53 +15,6 @@
 
 <body>
 
-
-  <div class="container-lg position-relative ">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-lg-top border border-success">
-
-      <div class="text-lg-start d-flex align-items-center">
-        <img src="./img/logo-pizza-removebg-preview.png" class="img-fluid" width="100px">
-        <h1 class="text-danger">Buona Pizza</h1>
-      </div>
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="collapsibleNavId">
-        <ul class="navbar-nav text-light">
-          <li class="nav-item active">
-            <a class="nav-link" href="#home">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#menu">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">A propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-danger text-white strong me-3" href="#booking">Réservation !</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-
-    <header class="header-style container d-flex flex-column justify-content-center align-items-center">
-
-      <h1>À propos</h1>
-      <nav class="breadcrumb fs-3 text-warning">
-        <a class="breadcrumb-item" href="home.html">Accueil</a>
-        <span class="breadcrumb-item active" aria-current="page">À propos</span>
-      </nav>
-
-    </header>
-  </div>
-
-
   <div class="d-flex flex-column align-items-center">
     <!--Présentation restaurant-->
     <h1>Notre restaurant...</h1>
@@ -129,86 +82,77 @@
 
 
     <!--Carousel avis-->
-    <div class="container">
-      <div class="row d-flex justify-content-center">
-        <div class="col-12 col-md-6">
-          <div id="carouselId" class="carousel carousel-dark slide w-100 my-2 my-lg-4" data-bs-ride="carousel">
-            <!--Chgt de style-->
-            <!--Noms des slides-->
-            <ol class="carousel-indicators">
-              <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="First slide"></li>
-              <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-              <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
-            </ol>
+    <div id="carouselId" class="carousel carousel-dark slide w-50 my-2 my-lg-4" data-bs-ride="carousel">
+      <!--Chgt de style-->
+      <!--Noms des slides-->
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="First slide"></li>
+        <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+        <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+      </ol>
 
-            <!--Structure du carousel-->
-            <div class="carousel-inner" role="listbox">
-              <!--Contenu du carousel-->
-              <div class="carousel-item active">
-                <div
-                  class="container bg-light border border-dark d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
-                  <div class="d-flex flex-column">
-                    <span>Icône citation</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quidem excepturi harum
-                      repudiandae? Exercitationem totam consequatur ipsam nisi! Tempora laboriosam exercitationem in
-                      accusamus officia vitae minus facilis, repellat voluptatem maxime?</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="http://via.placeholder.com/50" alt="photo du client" class="border rounded-circle me-2">
-                    <h4>Nom du client</h4>
-                  </div>
-                </div>
+      <!--Structure du carousel-->
+      <div class="carousel-inner" role="listbox">
+        <!--Contenu du carousel-->
+        <div class="carousel-item active ">
+          <div
+            class="container bg-light border border-dark d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
 
-              </div>
 
-              <div class="carousel-item">
-                <div
-                  class="container bg-light border border-dark d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
+            <span>Icône citation</span>
+            <p>blablablablablablablablabla</p>
 
-                  <div class="d-flex flex-column">
-                    <span>Icône citation</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quidem excepturi harum
-                      repudiandae? Exercitationem totam consequatur ipsam nisi! Tempora laboriosam exercitationem in
-                      accusamus officia vitae minus facilis, repellat voluptatem maxime?</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="http://via.placeholder.com/50" alt="photo du client" class="border rounded-circle me-2">
-                    <h4>Nom du client</h4>
-                  </div>
-                </div>
-              </div>
 
-              <div class="carousel-item">
-                <div
-                  class="container bg-light border border-dark d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
-                  <div class="d-flex flex-column">
-                    <span>Icône citation</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quidem excepturi harum
-                      repudiandae? Exercitationem totam consequatur ipsam nisi! Tempora laboriosam exercitationem in
-                      accusamus officia vitae minus facilis, repellat voluptatem maxime?</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="http://via.placeholder.com/50" alt="photo du client" class="border rounded-circle me-2">
-                    <h4>Nom du client</h4>
-                  </div>
-                </div>
-              </div>
 
-            </div>
-            <!--Boutons-->
-            <button class="carousel-control-prev btn-dark" type="button" data-bs-target="#carouselId"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <img src="http://via.placeholder.com/50" alt="photo du client" class="border rounded-circle me-2">
+            <h4>Nom du client</h4>
+
+
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div
+            class="container bg-light border border-dark d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
+
+
+            <span>Icône citation</span>
+            <span>blablablablablablablablabla</span>
+
+
+
+            <span><img src="http://via.placeholder.com/50" alt="photo du client" class="border rounded-circle me-2"></span>
+            <h4>Nom du client</h4>
+
+
           </div>
         </div>
+        <div class="carousel-item">
+          <div class="container bg-light border border-dark d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
+            
+              
+            <span>Icône citation</span>
+            <p>blablablablablablablablabla</p>
+
+          
+          
+            <img src="http://via.placeholder.com/50" alt="photo du client" class="border rounded-circle me-2">
+            <h4>Nom du client</h4>
+         
+        
       </div>
+        </div>
+      </div>
+      <!--Boutons-->
+      <button class="carousel-control-prev btn-dark" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
 
@@ -218,6 +162,69 @@
 
 
 
+    <div class="container">
+      <hr class="border border-5 border-danger">
+      </div>
+      
+      
+      
+      
+        <footer class="">
+          <div class="container-fluid container-lg border border-success bg-white">
+            <div class="row ">
+              <div class="col d-flex justify-content-center">
+                <i class="fa-brands fa-facebook  border rounded-circle p-1 m-10"></i>
+                <i class="fa-brands fa-instagram border rounded-circle p-1 m-10"></i>
+                <i class="fa-brands fa-tiktok border rounded-circle p-1 m-10"></i>
+                <i class="fa-brands fa-twitter border rounded-circle p-1 m-10"></i>
+                <i class="fa-brands fa-pinterest border rounded-circle p-1 m-10"></i>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-lg-3 d-flex flex-column align-items-center ">
+                <h3 class="m-2 mt-5">A propos</h3>
+                <p class="">Contact</p>
+                <p class="">Réservation</p>
+                <p class="">Mentions légales</p>
+                <p class="">CGU</p>
+              </div>
+              <div class="col-lg-3 d-flex flex-column align-items-center ">
+                <h3 class="m-2 mt-5">Contact</h3>
+                <p class="">123 rue du pain</p>
+                <p class="">01 77 88 99 11</p>
+                <p class="">contact@buonapizza.fr</p>
+              </div>
+      
+              <div class="col-lg-3 d-flex flex-column align-items-center ">
+                <h3 class="m-2 mt-5">Ouverture</h3>
+                <h5 class="m-2">Mardi au Samedi</h5>
+                <p class="">11h -14h 19h-22h </p>
+                <h5 class="">Dimanche</h5>
+                <p class="">18h-22h </p>
+              </div>
+      
+              <div class="col-lg-3 d-flex flex-column align-items-center ">
+                <a href="https://github.com/JustineDev00/Restaurant-BS-TBDA"><img src="./img/logo-pizza-removebg-preview.png"
+                    alt="" class="d-none d-lg-block d-flex justify-content-center w-100"></a>
+      
+              </div>
+              <div class="row">
+                <div class=" col-lg-12">
+                  <h3 class="m-2 mt-3 d-flex justify-content-center">Newsletter</h3>
+                  <div class="position-relative d-flex justify-content-center w-100">
+                    <input type="Email" value="" placeholder="Email" class="form-control w-100 p-3">
+                    <button class="btn btn-danger position-absolute top-0 end-0 mt-2 me-2">S'inscrire </button>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex ">
+              <div class="col "></div>
+              <p class="d-flex justify-content-center p-3">&copy; 2022 Buona Pizza (AFPA) | Justine-Patrick-Ugo</p>
+            </div>
+          </div>
+        </footer>
 
 
 
