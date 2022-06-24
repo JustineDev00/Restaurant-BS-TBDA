@@ -47,11 +47,86 @@
             <a class="nav-link" href="#about">A propos</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-danger text-white me-2" href="#booking">Réserver</a>
+            <a class="btn btn-danger text-white me-2" data-bs-toggle="modal" data-bs-target= "#modalBooking"><strong></strong> Réserver</a>
           </li>
         </ul>
       </div>
     </nav>
+  
+    <div class="modal fade" id="modalBooking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog model-dialog-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Réservation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Ecrivez votre nom et prénom" required>
+                <span class="form-label d-none">Nom et Prénom</span>
+              </div>
+              <div class="row">
+                <div class="form-group d-flex">
+                  <input class="form-control me-3" type="date" required>
+                  <input class="form-control" type="time" required>
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <select class="form-control" required>
+                    <option value="" selected hidden>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                  <span class="select-arrow"></span>
+                  <span class="form-label">Nombres de personnes</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <input class="form-control" type="email" placeholder="Ecrivez votre email" required>
+                  <span class="form-label d-none">Email</span>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="tel" placeholder="Ecrivez votre numéro de téléphone" required>
+                  <span class="form-label d-none">Numéro de téléphone</span>
+                </div>
+              </div>
+              <div class="form-btn">
+                
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger d-flex ms-auto" data-bs-toggle="modal" data-bs-target= "#alertBooking">Réservez !</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="alertBooking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog model-dialog-center text-white">
+        <div class="modal-content bg-success">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Réservation effectuée</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 <hr class="border border-5 border-success container">
 
@@ -141,7 +216,7 @@
       
 
 
-  <div id="booking" class="section">
+  <div class="section">
     <div class="section-center">
       <div class="container-fluid container-lg bg-white border border-success">
         <div class="row">
@@ -150,50 +225,7 @@
               <h2 class="d-flex justify-content-center">Réservez votre table en ligne !</h2>
             </div>
             <form>
-              <div class="form-group">
-                <input class="form-control" type="text" placeholder="Ecrivez votre nom et prénom" required>
-                <span class="form-label d-none">Nom et Prénom</span>
-              </div>
-              <div class="row">
-                <div class="form-group">
-                  <input class="form-control" type="date" required>
-                  <span class="form-label">Date pour la réservation</span>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-group">
-                  <select class="form-control" required>
-                    <option value="" selected hidden>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                  </select>
-                  <span class="select-arrow"></span>
-                  <span class="form-label">Nombres de personnes</span>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-group">
-                  <input class="form-control" type="email" placeholder="Ecrivez votre email" required>
-                  <span class="form-label d-none">Email</span>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" type="tel" placeholder="Ecrivez votre numéro de téléphone" required>
-                  <span class="form-label d-none">Numéro de téléphone</span>
-                </div>
-              </div>
-              <div class="form-btn">
-                <button class="btn btn-danger d-flex ms-auto">Réservez !</button>
-              </div>
+              
             </form>
           </div>
           <div class="col-12 col-lg-6 image-form">
