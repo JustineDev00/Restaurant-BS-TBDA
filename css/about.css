@@ -1,18 +1,18 @@
 .photo-1{
     height: 10vh;
-    background: url(/Restaurant-BS-TBDA-master/img/pexels-monicore-1391505.jpg) no-repeat 50% 50%;
+    background: url(/img/pexels-monicore-1391505.jpg) no-repeat 50% 50%;
 }
 
 
 .photo-2{
     height: 10vh;
-    background: url(/Restaurant-BS-TBDA-master/img/buffalo-mozzarella-g9f7d802e0_1280.jpg) no-repeat 36% 50%;
+    background: url(/img/buffalo-mozzarella-g9f7d802e0_1280.jpg) no-repeat 36% 50%;
 }
 
 
 .photo-3{
     height: 10vh;
-    background: url(/Restaurant-BS-TBDA-master/img/pexels-alena-darmel-7223301.jpg) no-repeat 50% 62%;
+    background: url(/img/pexels-alena-darmel-7223301.jpg) no-repeat 50% 62%;
 }
 
 @media screen and (min-width: 768px){
@@ -35,7 +35,7 @@
 
 .header-style{
     height: 40vh;
-    background: linear-gradient(rgba(205, 220, 207, 0.363), rgba(205, 220, 207, 0.363)), url(/Restaurant-BS-TBDA-master/img/pizza-header-2.jpg) no-repeat 65% 75%;
+    background: linear-gradient(rgba(205, 220, 207, 0.363), rgba(205, 220, 207, 0.363)), url(/img/pizza-header-2.jpg) no-repeat 65% 75%;
     background-size: cover;
     
 }
