@@ -1,6 +1,42 @@
 i{
     color: red;
+font-size: 30px;
+
 }
 span{
     color:red;
 }
+
+body{
+    background-color: #fdf6dd;
+}
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    color:red;
+    font-size: 50px;
+    font-weight: bold;
+}
+.card-body:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+footer div i{
+    cursor: pointer;
+}
+
+.header-style{
+    height: 600px;
+    background: linear-gradient(rgba(205, 220, 207, 0.363), rgba(205, 220, 207, 0.363)), url(/img/pizza-header-2.jpg) no-repeat 65% 75%;
+    background-size: cover;
+    
+}
+header .img{
+    animation: imgRotate 50s linear infinite;
+}
+
+
+
+
