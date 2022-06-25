@@ -8,6 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Dancing+Script:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="./img/buona-pizza.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="css\menu.css">
@@ -41,11 +45,91 @@
           <a class="nav-link" href="about.html">A propos</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-danger text-white me-2" href="#booking">Réserver</a>
+          <a class="btn btn-danger text-white me-2" data-bs-toggle="modal"
+            data-bs-target="#modalBooking"><strong></strong> Réserver</a>
+
         </li>
       </ul>
     </div>
   </nav>
+
+
+
+
+  <div class="modal fade" id="modalBooking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog model-dialog-center">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Réservation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Ecrivez votre nom et prénom" required>
+              <span class="form-label d-none">Nom et Prénom</span>
+            </div>
+            <div class="row">
+              <div class="form-group d-flex">
+                <input class="form-control me-3" type="date" required>
+                <input class="form-control" type="time" required>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group">
+                <select class="form-control" required>
+                  <option value="" selected hidden>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+                <span class="select-arrow"></span>
+                <span class="form-label">Nombres de personnes</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group">
+                <input class="form-control" type="email" placeholder="Ecrivez votre email" required>
+                <span class="form-label d-none">Email</span>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="tel" placeholder="Ecrivez votre numéro de téléphone" required>
+                <span class="form-label d-none">Numéro de téléphone</span>
+              </div>
+            </div>
+            <div class="form-btn">
+
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger d-flex ms-auto" data-bs-toggle="modal" data-bs-target="#alertBooking">Réservez
+            !</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="alertBooking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog model-dialog-center text-white">
+      <div class="modal-content bg-success">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Réservation effectuée</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
   <header class="header-style container d-flex flex-column justify-content-center align-items-center">
     <h1>Menu</h1>
     <nav class="breadcrumb fs-3 text-warning">
@@ -62,9 +146,9 @@
 
 
 
-  <div class="container d-flex justify-content-center">
-    <h2>Menu</h2>
-  </div>
+
+  <h2 class="container d-flex justify-content-center">Menu</h2>
+
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs justify-content-center mx-lg-4" id="myTab" role="tablist">
@@ -94,568 +178,568 @@
         role="tab" aria-controls="ice-cream" aria-selected="false">Glaces</button>
     </li>
   </ul>
+  <div class="container-fluid container-lg bg-white border border-success">
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active m-2 m-lg-4" id="starters" role="tabpanel" aria-labelledby="starters-tab">
+        <div class="container">
+          <div class="row">
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div class="tab-pane active m-2 m-lg-4" id="starters" role="tabpanel" aria-labelledby="starters-tab">
-      <div class="container">
-        <div class="row">
+            <div class="col-12 col-lg-6">
 
-          <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-center my-2 my-lg-4">
+                <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
 
-            <div class="d-flex align-items-center my-2 my-lg-4">
-              <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+
+              <div class="d-flex align-items-center my-2 my-lg-4">
+                <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between  border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center my-2 my-lg-4">
+                <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between  border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center my-2 my-lg-4">
+                <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
               </div>
             </div>
 
+            <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-center my-2 my-lg-4">
+                <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-bottom border-success">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
 
-            <div class="d-flex align-items-center my-2 my-lg-4">
-              <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+
+              <div class="d-flex align-items-center my-2 my-lg-4">
+                <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center my-2 my-lg-4">
+                <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center my-2 my-lg-4">
+                <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
               </div>
             </div>
 
-            <div class="d-flex align-items-center my-2 my-lg-4">
-              <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center my-2 my-lg-4">
-              <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
           </div>
 
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center my-2 my-lg-4">
-              <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+        </div>
+      </div>
+
+      <div class="tab-pane m-2 m-lg-4" id="main_dishes" role="tabpanel" aria-labelledby="main_dishes-tab">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between  border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between  border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between  border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
               </div>
             </div>
 
+            <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between  border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
 
-            <div class="d-flex align-items-center my-2 my-lg-4">
-              <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between  border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between  border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
               </div>
             </div>
 
-            <div class="d-flex align-items-center my-2 my-lg-4">
-              <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tab-pane m-2 m-lg-4" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between  border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
               </div>
             </div>
 
-            <div class="d-flex align-items-center my-2 my-lg-4">
-              <img src="http://via.placeholder.com/100" class="me-3 m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
               </div>
             </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tab-pane m-2 m-lg-4" id="cold-drinks" role="tabpanel" aria-labelledby="cold-drinks-tab">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between  border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
 
       </div>
-    </div>
 
-    <div class="tab-pane m-2 m-lg-4" id="main_dishes" role="tabpanel" aria-labelledby="main_dishes-tab">
-      <div class="container">
-        <div class="row">
 
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+      <div class="tab-pane m-2 m-lg-4" id="hot-drinks" role="tabpanel" aria-labelledby="hot-drinks-tab">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between  border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
               </div>
             </div>
 
+            <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
 
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
               </div>
             </div>
 
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-    <div class="tab-pane m-2 m-lg-4" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
           </div>
 
         </div>
-
       </div>
-    </div>
 
-    <div class="tab-pane m-2 m-lg-4" id="cold-drinks" role="tabpanel" aria-labelledby="cold-drinks-tab">
-      <div class="container">
-        <div class="row">
+      <div class="tab-pane m-2 m-lg-4" id="hot-drinks" role="tabpanel" aria-labelledby="hot-drinks-tab">
+        <div class="container">
+          <div class="row">
 
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between  border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
               </div>
             </div>
 
+            <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
 
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
               </div>
             </div>
 
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
           </div>
 
         </div>
-
       </div>
 
-    </div>
+      <div class="tab-pane m-2 m-lg-4" id="ice-cream" role="tabpanel" aria-labelledby="ice-cream-tab">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
 
 
-    <div class="tab-pane m-2 m-lg-4" id="hot-drinks" role="tabpanel" aria-labelledby="hot-drinks-tab">
-      <div class="container">
-        <div class="row">
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
 
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
               </div>
             </div>
 
+            <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
 
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
+                <div class=" d-flex flex-column text-start">
+                  <h5 class=" d-flex justify-content-between border-success border-bottom">Pizza <span>15 €</span></h5>
+                  <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
               </div>
             </div>
 
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
           </div>
 
         </div>
-
       </div>
+
+
     </div>
-
-    <div class="tab-pane m-2 m-lg-4" id="hot-drinks" role="tabpanel" aria-labelledby="hot-drinks-tab">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-    <div class="tab-pane m-2 m-lg-4" id="ice-cream" role="tabpanel" aria-labelledby="ice-cream-tab">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-              <img src="http://via.placeholder.com/100" class="m-1 rounded-circle w-25">
-              <div class=" d-flex flex-column text-start">
-                <h5 class=" d-flex justify-content-between border-bottom">Pizza <span>15 €</span></h5>
-                <p class=" text-muted fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-
   </div>
-
 
 
   <div class="container">
@@ -686,7 +770,7 @@
         </div>
         <div class="col-lg-3 d-flex flex-column align-items-center ">
           <h3 class="m-2 mt-5">Contact</h3>
-          <p class="">123 rue du pain</p>
+          <p class="">123 rue du pain, 59400 Cambrai</p>
           <p class="">01 77 88 99 11</p>
           <p class="">contact@buonapizza.fr</p>
         </div>

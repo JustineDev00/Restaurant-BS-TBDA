@@ -8,6 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/buona-pizza.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="css/about.css">
@@ -41,11 +44,90 @@
           <a class="nav-link" href="about.html">A propos</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-danger text-white me-2" href="#booking">Réserver</a>
+         
+          <a class="btn btn-danger text-white me-2" data-bs-toggle="modal" data-bs-target= "#modalBooking"><strong></strong> Réserver</a>
+
         </li>
       </ul>
     </div>
   </nav>
+
+
+
+
+  <div class="modal fade" id="modalBooking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog model-dialog-center">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Réservation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Ecrivez votre nom et prénom" required>
+              <span class="form-label d-none">Nom et Prénom</span>
+            </div>
+            <div class="row">
+              <div class="form-group d-flex">
+                <input class="form-control me-3" type="date" required>
+                <input class="form-control" type="time" required>
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group">
+                <select class="form-control" required>
+                  <option value="" selected hidden>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+                <span class="select-arrow"></span>
+                <span class="form-label">Nombres de personnes</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group">
+                <input class="form-control" type="email" placeholder="Ecrivez votre email" required>
+                <span class="form-label d-none">Email</span>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="tel" placeholder="Ecrivez votre numéro de téléphone" required>
+                <span class="form-label d-none">Numéro de téléphone</span>
+              </div>
+            </div>
+            <div class="form-btn">
+              
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger d-flex ms-auto" data-bs-toggle="modal" data-bs-target= "#alertBooking">Réservez !</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="alertBooking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog model-dialog-center text-white">
+      <div class="modal-content bg-success">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Réservation effectuée</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <header class="header-style container d-flex flex-column justify-content-center align-items-center">
     <h1>À propos</h1>
@@ -54,12 +136,12 @@
       <span class="breadcrumb-item active" aria-current="page">À propos</span>
     </nav>
   </header>  
-
+  <hr class="border border-5 border-success container">
 
   <div class="d-flex flex-column align-items-center">
     <!--Présentation restaurant-->
-    <h1>Notre restaurant...</h1>
-    <div class="container">
+    <h2>Notre restaurant...</h2>
+    <div class="container-fluid container-lg border border-success bg-white"">
       <div class="row mx-2 mx-lg-4 my-4">
         <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
           <div class="photo-1 my-2 my-lg-3 w-75 w-lg-50 me-auto shadow-sm border border-success"></div>
@@ -67,8 +149,8 @@
           <div class="photo-3 my-2 my-lg-3 w-75 w-lg-50 me-auto shadow-sm border border-success"></div>
         </div>
         <div class="col-12 col-lg-6 d-flex flex-column align-items-center ps-4">
-          <h5>Titre section</h5>
-          <h2>Gros titre</h2>
+          
+          <h2>Les produits</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odio dolores laboriosam doloremque ex
             distinctio eligendi dolorum animi nam perferendis reprehenderit labore, minus impedit id quidem. Aliquid non
             cupiditate labore?</p>
@@ -83,11 +165,11 @@
     <hr>
 
     <div class="container d-flex flex-column justify-content-center align-items-center">
-      <h5>Titre section</h5>
+    
       <h2 class="text-center">Notre équipe à votre service</h2>
       <div class="row">
         <div class="col-12 col-lg-4 my-2">
-          <div class="card">
+          <div class="card container-fluid container-lg border border-success bg-white"">
             <img class="card-img-top" src="img/mozzarella-g513288f19_640.jpg" alt="Title">
             <div class="card-body">
               <h4 class="card-title text-center">Bjorn Ragnarsson</h4>
@@ -98,7 +180,7 @@
 
         <div class="col-12 col-lg-4 my-2">
 
-          <div class="card">
+          <div class="card container-fluid container-lg border border-success bg-white"">
             <img class="card-img-top" src="img/mozzarella-g513288f19_640.jpg" alt="Title">
             <div class="card-body">
               <h4 class="card-title text-center">Bjorn Ragnarsson</h4>
@@ -109,7 +191,7 @@
 
         <div class="col-12 col-lg-4 my-2">
 
-          <div class="card">
+          <div class="card container-fluid container-lg border border-success bg-white"">
             <img class="card-img-top" src="img/mozzarella-g513288f19_640.jpg" alt="Title">
             <div class="card-body">
               <h4 class="card-title text-center">Bjorn Ragnarsson</h4>
@@ -142,9 +224,9 @@
               <!--Contenu du carousel-->
               <div class="carousel-item active">
                 <div
-                  class="container bg-light border border-dark d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
+                  class="container bg-light border border-success d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
                   <div class="d-flex flex-column">
-                    <span>Icône citation</span>
+                    <span><i class="fa-solid fa-angles-right"></i></span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quidem excepturi harum
                       repudiandae? Exercitationem totam consequatur ipsam nisi! Tempora laboriosam exercitationem in
                       accusamus officia vitae minus facilis, repellat voluptatem maxime?</p>
@@ -159,10 +241,10 @@
 
               <div class="carousel-item">
                 <div
-                  class="container bg-light border border-dark d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
+                  class="container bg-light border border-success d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
 
                   <div class="d-flex flex-column">
-                    <span>Icône citation</span>
+                    <span><i class="fa-solid fa-angles-right"></i></span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quidem excepturi harum
                       repudiandae? Exercitationem totam consequatur ipsam nisi! Tempora laboriosam exercitationem in
                       accusamus officia vitae minus facilis, repellat voluptatem maxime?</p>
@@ -176,9 +258,9 @@
 
               <div class="carousel-item">
                 <div
-                  class="container bg-light border border-dark d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
+                  class="container bg-light border border-success d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
                   <div class="d-flex flex-column">
-                    <span>Icône citation</span>
+                    <span><i class="fa-solid fa-angles-right"></i></span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quidem excepturi harum
                       repudiandae? Exercitationem totam consequatur ipsam nisi! Tempora laboriosam exercitationem in
                       accusamus officia vitae minus facilis, repellat voluptatem maxime?</p>
@@ -197,9 +279,9 @@
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <button class="carousel-control-next d-none d-flex" type="button" data-bs-target="#carouselId" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+              <span class="visually-hidden ">Next</span>
             </button>
           </div>
         </div>
