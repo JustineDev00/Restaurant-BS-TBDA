@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
   
 
   <!-- Required meta tags -->
@@ -22,7 +23,9 @@
 <body class="bg-light">
     
   <div class="container-lg position-relative ">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-lg-top border border-success">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-lg-top border border-success">
+
 
       <div class="text-lg-start d-flex align-items-center">
         <img src="./img/logo-pizza-removebg-preview.png" class="img-fluid" width="100px">
@@ -49,7 +52,8 @@
           </li>
           <li class="nav-item">
 
-            <a class="btn btn-danger text-white me-2" href="#booking">Réserver</a>
+
+            <a class="btn btn-danger text-white me-2" data-bs-toggle="modal" data-bs-target= "#modalBooking"><strong></strong> Réserver</a>
 
           </li>
         </ul>
@@ -57,9 +61,83 @@
     </nav>
   </div>
 
-  <header class="header-style container d-flex flex-column justify-content-center align-items-center">
-    <h1>Menu</h1>
-  </header>
+  
+    <div class="modal fade" id="modalBooking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog model-dialog-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Réservation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Ecrivez votre nom et prénom" required>
+                <span class="form-label d-none">Nom et Prénom</span>
+              </div>
+              <div class="row">
+                <div class="form-group d-flex">
+                  <input class="form-control me-3" type="date" required>
+                  <input class="form-control" type="time" required>
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <select class="form-control" required>
+                    <option value="" selected hidden>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                  <span class="select-arrow"></span>
+                  <span class="form-label">Nombres de personnes</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <input class="form-control" type="email" placeholder="Ecrivez votre email" required>
+                  <span class="form-label d-none">Email</span>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="tel" placeholder="Ecrivez votre numéro de téléphone" required>
+                  <span class="form-label d-none">Numéro de téléphone</span>
+                </div>
+              </div>
+              <div class="form-btn">
+                
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger d-flex ms-auto" data-bs-toggle="modal" data-bs-target= "#alertBooking">Réservez !</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="alertBooking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog model-dialog-center text-white">
+        <div class="modal-content bg-success">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Réservation effectuée</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
 
 <hr class="border border-5 border-success container">
 
@@ -149,13 +227,13 @@
       
 
 
-  <div id="booking" class="section">
+  <div class="section">
     <div class="section-center">
       <div class="container-fluid container-lg bg-white border border-success">
-        <div class="row">
+        <div class="row"> <h2 class="d-flex justify-content-center">Réservez votre table en ligne !</h2>
           <div class="booking-form col-12 col-lg-6">
             <div class="form-header">
-              <h2 class="d-flex justify-content-center">Réservez votre table en ligne !</h2>
+             
             </div>
             <form>
               <div class="form-group">
@@ -163,9 +241,10 @@
                 <span class="form-label d-none">Nom et Prénom</span>
               </div>
               <div class="row">
-                <div class="form-group">
-                  <input class="form-control" type="date" required>
-                  <span class="form-label">Date pour la réservation</span>
+                <div class="form-group d-flex">
+                  <input class="form-control me-3" type="date" required>
+                  <input class="form-control" type="time" required>
+                  
                 </div>
               </div>
               <div class="row">
@@ -200,10 +279,14 @@
                 </div>
               </div>
               <div class="form-btn">
-                <button class="btn btn-danger d-flex ms-auto">Réservez !</button>
+                
               </div>
+           <div class="modal-footer">
+            <button class="btn btn-danger d-flex ms-auto" data-bs-toggle="modal" data-bs-target= "#alertBooking">Réservez !</button>
+          </div>
             </form>
           </div>
+          
           <div class="col-12 col-lg-6 image-form">
             <div class="image-fond d-none d-lg-block">
 
@@ -220,6 +303,93 @@
   <div class="container">
 <hr class="border border-5 border-danger">
 </div>
+
+
+
+
+<!--Carousel avis-->
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-12 col-md-6">
+      <div id="carouselId" class="carousel carousel-dark slide w-100 my-2 my-lg-4" data-bs-ride="carousel">
+        <!--Chgt de style-->
+        <!--Noms des slides-->
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="First slide"></li>
+          <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+          <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+        </ol>
+
+        <!--Structure du carousel-->
+        <div class="carousel-inner" role="listbox">
+          <!--Contenu du carousel-->
+          <div class="carousel-item active">
+            <div
+              class="container bg-light border border-dark d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
+              <div class="d-flex flex-column">
+                <span><i class="fa-solid fa-angles-right"></i></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quidem excepturi harum
+                  repudiandae? Exercitationem totam consequatur ipsam nisi! Tempora laboriosam exercitationem in
+                  accusamus officia vitae minus facilis, repellat voluptatem maxime?</p>
+              </div>
+              <div class="d-flex">
+                <img src="http://via.placeholder.com/50" alt="photo du client" class="border rounded-circle me-2">
+                <h4>Nom du client</h4>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="container bg-light border border-dark d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
+
+              <div class="d-flex flex-column">
+                <span><i class="fa-solid fa-angles-right"></i></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quidem excepturi harum
+                  repudiandae? Exercitationem totam consequatur ipsam nisi! Tempora laboriosam exercitationem in
+                  accusamus officia vitae minus facilis, repellat voluptatem maxime?</p>
+              </div>
+              <div class="d-flex">
+                <img src="http://via.placeholder.com/50" alt="photo du client" class="border rounded-circle me-2">
+                <h4>Nom du client</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="container bg-light border border-dark d-flex flex-column justify-content-evenly align-items-start p-4 me-auto">
+              <div class="d-flex flex-column">
+                <span><i class="fa-solid fa-angles-right"></i></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quidem excepturi harum
+                  repudiandae? Exercitationem totam consequatur ipsam nisi! Tempora laboriosam exercitationem in
+                  accusamus officia vitae minus facilis, repellat voluptatem maxime?</p>
+              </div>
+              <div class="d-flex">
+                <img src="http://via.placeholder.com/50" alt="photo du client" class="border rounded-circle me-2">
+                <h4>Nom du client</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--Boutons-->
+        <button class="carousel-control-prev btn-dark" type="button" data-bs-target="#carouselId"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 
