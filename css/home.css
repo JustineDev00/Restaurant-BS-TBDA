@@ -37,6 +37,22 @@ header .img{
     animation: imgRotate 50s linear infinite;
 }
 
+@media screen and (min-width: 768px){
+    .carousel-control-prev{
+        margin-left: -10rem;
+    }
+    .carousel-control-next{
+        margin-right:-10rem;
+    }
+}
 
+@media screen and (max-width: 768px){
+    .carousel-control-prev{
+        display: none;
+    }
+    .carousel-control-next{
+        display: none;
+    }
+}
 
 
