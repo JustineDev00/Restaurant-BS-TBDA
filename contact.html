@@ -68,51 +68,56 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <input class="form-control" type="text" placeholder="Ecrivez votre nom et prénom" required>
+              <input class="form-control p-2 mb-3 mt-3" type="text" placeholder="Ecrivez votre nom et prénom"
+                required>
               <span class="form-label d-none">Nom et Prénom</span>
             </div>
             <div class="row">
               <div class="form-group d-flex">
-                <input class="form-control me-3" type="date" required>
-                <input class="form-control" type="time" required>
-                
+                <input class="form-control mb-3 me-3" type="date" required>
+                <input class="form-control mb-3" type="time" required>
               </div>
-            </div>
-            <div class="row">
-              <div class="form-group">
-                <select class="form-control" required>
-                  <option value="" selected hidden>0</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
-                  <option>11</option>
-                  <option>12</option>
-                </select>
-                <span class="select-arrow"></span>
-                <span class="form-label">Nombres de personnes</span>
+              <div class="row">
+                <div class="form-group mb-3">
+                  <select class="form-control" required>
+                    <option value="" selected hidden>1</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                  <span class="select-arrow"></span>
+
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="form-group">
-                <input class="form-control" type="email" placeholder="Ecrivez votre email" required>
-                <span class="form-label d-none">Email</span>
+              <div class="row">
+                <div class="form-group">
+                  <input class="form-control mb-3 " type="email" placeholder="Ecrivez votre email" required>
+                  <span class="form-label d-none">Email</span>
+                </div>
+                <div class="form-group">
+                  <input class="form-control mb-3" type="tel" placeholder="Ecrivez votre numéro de téléphone"
+                    required>
+                  <span class="form-label d-none">Numéro de téléphone</span>
+                </div>
               </div>
-              <div class="form-group">
-                <input class="form-control" type="tel" placeholder="Ecrivez votre numéro de téléphone" required>
-                <span class="form-label d-none">Numéro de téléphone</span>
+              <div class="form-btn">
+
               </div>
+             
+
             </div>
-            <div class="form-btn">
-              
-            </div>
+           
           </form>
+        
         </div>
         <div class="modal-footer">
           <button class="btn btn-danger d-flex ms-auto" data-bs-toggle="modal" data-bs-target= "#alertBooking">Réservez !</button>
@@ -174,9 +179,9 @@
         <form id="contact-form" name="contact-form" class="w-lg-50">
           <div class="md-form mb-0 d-md-flex text-lg-right mt-3 text-center">
 
-            <div class="row d-lg-none d-md-block"><label for="name" class="">Nom</label></div>
+            <div class="row  d-md-block"><label for="name" class="">Nom</label></div>
 
-            <span class="row d-lg-none d-md-block"><label for="name" class="">Nom</label></span>
+            <span class="row  d-md-block"><label for="name" class="">Nom</label></span>
 
             <input type="text" id="name" name="name" placeholder="Insérez votre nom et prénom..."
               class="form-control mx-2 mx-lg-5" required>
